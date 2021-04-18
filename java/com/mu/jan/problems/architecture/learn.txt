@@ -1,0 +1,6 @@
+Clean architecture is a way to manage complexity of android projects.
+There are three main layers of clean architecture in android:
+1. Data Layer - database, api, local or remote data source work
+2. Domain layer - consists models, repository, viewModels
+3. Presentation layer - consists activities, fragments, service, broadcast receivers,
+adapters, and all of UI related code.

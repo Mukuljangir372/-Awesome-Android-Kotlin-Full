@@ -1,0 +1,22 @@
+Rxjava and RxAndroid and UseCase(from Domain layer of Clean architecture)
+----------------------------------------------------------------------
+Rxjava is a android JVM library that help for doing asynchronous tasks.
+It's main building block are triple O's, means Operator, Observer and Observable
+With the help of them, we perform asynchronous tasks in our project.
+---------------------------------------------------------------------
+RxAndroid is extension of Rxjava. It's work is same as Rxjava.
+But one major different between Rxjava and RxAndroid, It introduced main thread
+that we use it for updating UI in our apps. For UI related work, it provides
+AndroidScheduler.mainThread() for working on UI thread.
+---------------------------------------------------------------------
+UseCase is basically, a business logic. In this, you define what steps you take to
+get your results.
+for instance,
+use Case :
+Consider an example, where we want to do an API call and save it to some storage/file.
+It would be a long-running task and doing a long-running task on the main thread
+might lead to unexpected behavior like App Not Responding.
+So, to do the above-mentioned task we might think to use AsyncTask as our goto
+solution. But with Android R, AsyncTask is going to be deprecated, and then
+libraries like RxJava will be the solution for it.
+----------------------------------------------------------------------
